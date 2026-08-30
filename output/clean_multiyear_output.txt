@@ -1,0 +1,181 @@
+﻿python.exe : C:\Users\abiol\anaconda3\lib\site-packages\pandas\io\sas\sas7bdat.py:800: 
+PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling 
+`frame.insert` many times, which has poor performance.  Consider joining all columns at once using 
+pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
+At line:1 char:1
++ & "C:\Users\abiol\anaconda3\python.exe" "C:\Users\abiol\projects\Pret ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\abiol\...= frame.copy()`:String) [], RemoteExcept 
+   ion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  rslt[name] = self._byte_chunk[jb, :].view(dtype=self.byte_order + "d")
+C:\Users\abiol\anaconda3\lib\site-packages\pandas\io\sas\sas7bdat.py:809: PerformanceWarning: DataFrame 
+is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor 
+performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a 
+de-fragmented frame, use `newframe = frame.copy()`
+  rslt[name] = self._string_chunk[js, :]
+
+Traceback (most recent call last):
+======================================================================
+YEAR 2021: C:\Users\abiol\projects\Preterm\data\natality2021us.sas7bdat
+======================================================================
+    ...read 200,000 rows
+    ...read 400,000 rows
+    ...read 600,000 rows
+    ...read 800,000 rows
+    ...read 1,000,000 rows
+    ...read 1,200,000 rows
+    ...read 1,400,000 rows
+    ...read 1,600,000 rows
+    ...read 1,800,000 rows
+    ...read 2,000,000 rows
+    ...read 2,200,000 rows
+    ...read 2,400,000 rows
+    ...read 2,600,000 rows
+    ...read 2,800,000 rows
+    ...read 3,000,000 rows
+    ...read 3,200,000 rows
+    ...read 3,400,000 rows
+    ...read 3,600,000 rows
+    ...read 3,669,928 rows
+
+    Loaded 3,669,928 rows, 55 columns.
+    [2021] sentinel spot-check (top 3 values per field):
+        precare    2.0=1,433,870, 3.0=1,205,269, 4.0=311,834
+        previs     12.0=546,041, 10.0=502,048, 11.0=398,615
+        cig_0      0.0=3,439,196, 20.0=62,806, 10.0=56,793
+        bmi        99.9000015258789=73,737, 26.600000381469727=69,429, 28.299999237060547=62,678
+        wtgain     30.0=158,417, 20.0=135,194, 25.0=125,235
+    [2021] gestrec3 -> combgest<37: code=1.0, agreement=1.0000
+    [2021] oegest_r3 -> oegest_comb<37: code=1.0, agreement=1.0000
+    [2021] preterm (LMP-based)=12.27%   preterm_oe (obstetric-estimate)=10.48%
+    [2021] saved checkpoint -> C:\Users\abiol\projects\Preterm\data\natality2021us_cleaned.csv
+
+======================================================================
+YEAR 2022: C:\Users\abiol\projects\Preterm\data\natality2022us.sas7bdat
+======================================================================
+    ...read 200,000 rows
+    ...read 400,000 rows
+    ...read 600,000 rows
+    ...read 800,000 rows
+    ...read 1,000,000 rows
+    ...read 1,200,000 rows
+    ...read 1,400,000 rows
+    ...read 1,600,000 rows
+    ...read 1,800,000 rows
+    ...read 2,000,000 rows
+    ...read 2,200,000 rows
+    ...read 2,400,000 rows
+    ...read 2,600,000 rows
+    ...read 2,800,000 rows
+    ...read 3,000,000 rows
+    ...read 3,200,000 rows
+    ...read 3,400,000 rows
+    ...read 3,600,000 rows
+    ...read 3,676,029 rows
+
+    Loaded 3,676,029 rows, 55 columns.
+    [2022] sentinel spot-check (top 3 values per field):
+        precare    2.0=1,372,917, 3.0=1,226,439, 4.0=327,911
+        previs     12.0=538,945, 10.0=503,796, 11.0=396,393
+        cig_0      0.0=3,491,644, 20.0=49,123, 10.0=44,189
+        bmi        99.9000015258789=76,090, 26.600000381469727=69,476, 28.299999237060547=63,227
+        wtgain     30.0=156,461, 20.0=142,490, 25.0=126,439
+    [2022] gestrec3 -> combgest<37: code=1.0, agreement=1.0000
+    [2022] oegest_r3 -> oegest_comb<37: code=1.0, agreement=1.0000
+    [2022] preterm (LMP-based)=12.19%   preterm_oe (obstetric-estimate)=10.37%
+    [2022] saved checkpoint -> C:\Users\abiol\projects\Preterm\data\natality2022us_cleaned.csv
+
+======================================================================
+YEAR 2023: C:\Users\abiol\projects\Preterm\data\natality2023us.sas7bdat
+======================================================================
+    ...read 200,000 rows
+    ...read 400,000 rows
+    ...read 600,000 rows
+    ...read 800,000 rows
+    ...read 1,000,000 rows
+    ...read 1,200,000 rows
+    ...read 1,400,000 rows
+    ...read 1,600,000 rows
+    ...read 1,800,000 rows
+    ...read 2,000,000 rows
+    ...read 2,200,000 rows
+    ...read 2,400,000 rows
+    ...read 2,600,000 rows
+    ...read 2,800,000 rows
+    ...read 3,000,000 rows
+    ...read 3,200,000 rows
+    ...read 3,400,000 rows
+    ...read 3,600,000 rows
+    ...read 3,605,081 rows
+
+    Loaded 3,605,081 rows, 55 columns.
+    [2023] sentinel spot-check (top 3 values per field):
+        precare    2.0=1,307,590, 3.0=1,230,728, 4.0=337,103
+        previs     12.0=532,237, 10.0=480,175, 11.0=394,922
+        cig_0      0.0=3,455,754, 20.0=38,071, 10.0=35,297
+        bmi        99.9000015258789=82,658, 26.600000381469727=67,395, 28.299999237060547=62,104
+        wtgain     30.0=152,583, 20.0=140,940, 25.0=123,684
+    [2023] gestrec3 -> combgest<37: code=1.0, agreement=1.0000
+    [2023] oegest_r3 -> oegest_comb<37: code=1.0, agreement=1.0000
+    [2023] preterm (LMP-based)=12.22%   preterm_oe (obstetric-estimate)=10.39%
+    [2023] saved checkpoint -> C:\Users\abiol\projects\Preterm\data\natality2023us_cleaned.csv
+
+======================================================================
+YEAR 2024: C:\Users\abiol\projects\Preterm\data\natality2024us.sas7bdat
+======================================================================
+    ...read 200,000 rows
+    ...read 400,000 rows
+    ...read 600,000 rows
+    ...read 800,000 rows
+    ...read 1,000,000 rows
+    ...read 1,200,000 rows
+    ...read 1,400,000 rows
+    ...read 1,600,000 rows
+    ...read 1,800,000 rows
+    ...read 2,000,000 rows
+    ...read 2,200,000 rows
+    ...read 2,400,000 rows
+    ...read 2,600,000 rows
+    ...read 2,800,000 rows
+    ...read 3,000,000 rows
+    ...read 3,200,000 rows
+    ...read 3,400,000 rows
+    ...read 3,600,000 rows
+    ...read 3,638,436 rows
+
+  File "C:\Users\abiol\projects\Preterm\data\clean_natality_multiyear.py", line 243, in <module>
+    Loaded 3,638,436 rows, 55 columns.
+    [2024] sentinel spot-check (top 3 values per field):
+        precare    2.0=1,287,654, 3.0=1,253,860, 4.0=346,032
+        previs     12.0=542,786, 10.0=484,607, 11.0=400,541
+        cig_0      0.0=3,511,981, 20.0=30,036, 10.0=26,832
+        bmi        99.9000015258789=88,890, 26.600000381469727=68,021, 28.299999237060547=62,792
+        wtgain     30.0=152,058, 20.0=142,658, 25.0=123,689
+    [2024] gestrec3 -> combgest<37: code=1.0, agreement=1.0000
+    [2024] oegest_r3 -> oegest_comb<37: code=1.0, agreement=1.0000
+    [2024] preterm (LMP-based)=12.08%   preterm_oe (obstetric-estimate)=10.39%
+    [2024] saved checkpoint -> C:\Users\abiol\projects\Preterm\data\natality2024us_cleaned.csv
+    main()
+  File "C:\Users\abiol\projects\Preterm\data\clean_natality_multiyear.py", line 218, in main
+    combined = pd.concat(yearly_frames, ignore_index=True)
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 307, in concat
+    return op.get_result()
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 532, in 
+get_result
+    new_data = concatenate_managers(
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\core\internals\concat.py", line 219, in 
+concatenate_managers
+    values = concat_compat(vals, axis=1)
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\core\dtypes\concat.py", line 134, in 
+concat_compat
+    return cls._concat_same_type(to_concat)
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\core\arrays\masked.py", line 369, in 
+_concat_same_type
+    data = np.concatenate([x._data for x in to_concat])
+  File "<__array_function__ internals>", line 5, in concatenate
+numpy.core._exceptions.MemoryError: Unable to allocate 111. MiB for an array with shape (14589474,) and 
+data type int64

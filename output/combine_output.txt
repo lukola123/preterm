@@ -1,0 +1,41 @@
+﻿python.exe : C:\Users\abiol\anaconda3\lib\site-packages\numpy\__init__.py:143: UserWarning: mkl-service 
+package failed to import, therefore Intel(R) MKL initialization ensuring its correct out-of-the box 
+operation under condition when Gnu OpenMP had already been loaded by Python process is not assured. 
+Please install mkl-service package, see http://github.com/IntelPython/mkl-service
+At line:1 char:1
++ & "C:\Users\abiol\anaconda3\python.exe" -u "C:\Users\abiol\projects\P ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\abiol\...hon/mkl-service:String) [], RemoteExcept 
+   ion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  from . import _distributor_init
+Traceback (most recent call last):
+  File "C:\Users\abiol\projects\Preterm\data\combine_cleaned_years.py", line 13, in <module>
+    import pandas as pd
+  File "C:\Users\abiol\anaconda3\lib\site-packages\pandas\__init__.py", line 16, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "C:\Users\abiol\anaconda3\python.exe"
+  * The NumPy version is: "1.20.3"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: The specified module could not 
+be found.
+

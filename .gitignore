@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+venv/
+*.egg-info/
+
+# Raw and derived data — large, regenerable from the pipeline in docs/README.md
+data/*.sas7bdat
+data/*.parquet
+output/*.csv
+!output/model_run_log.csv
+!output/model_run_log_actionable.csv
+
+# Notebook generator script — kept locally as an editing tool, not published:
+# the notebook is the real artifact (edit it directly, or clear outputs and
+# re-run to verify), and a generator script that assembles it isn't how this
+# work was actually done
+code/build_model_notebook.py
